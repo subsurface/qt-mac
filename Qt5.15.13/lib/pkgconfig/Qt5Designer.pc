@@ -1,0 +1,13 @@
+prefix=/usr/local/Qt-5.15.13
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/lib/QtDesigner.framework/Headers
+
+
+Name: Qt5 Designer
+Description: Qt Designer module
+Version: 5.15.13
+Libs: -F${libdir} -framework QtDesigner 
+Cflags: -DQT_DESIGNER_LIB -I${includedir} -F${libdir}
+Requires: Qt5Core Qt5Gui Qt5Widgets Qt5Xml Qt5UiPlugin
+
